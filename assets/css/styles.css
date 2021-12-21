@@ -1,0 +1,210 @@
+/*Textos*/
+
+body,
+footer {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.titulo-destaque {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.titulo {
+  font-weight: 600;
+  font-size: 2.25rem;
+}
+
+.titulo-gradiente {
+  background-image: linear-gradient(90deg, #FF6361 1.63%, #FF9D57 97.74%);
+  color: #FF6460;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitulo {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.paragrafo-destaque {
+  font-size: 1.25rem;
+}
+
+p {
+  color: #545454;
+}
+
+@media screen and (max-width: 800px) {
+  .titulo-destaque {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .paragrafo-destaque {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .baixar-guia p {
+    font-size: 1.5rem;
+  }
+}
+
+
+/*Botões*/
+
+.botoes {
+  background: #2E30AB;
+  padding: .8rem 2rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  transition: .2s linear;
+}
+
+.botoes:hover {
+  background: linear-gradient(-45deg, #FF9D57 14.62%, #FF6361 100%);
+  border: 2px solid white;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .botoes {
+    display: block;
+    text-align: center;
+    margin: 0 3rem;
+  }
+}
+
+/*Acordeão*/
+
+textarea:focus,
+input:focus,
+select:focus,
+.accordion-button:focus,
+.accordion-item {
+  box-shadow: 0 0 0 0 !important;
+  border: 0 none !important;
+  outline: 0 !important;
+}
+
+.accordion-button,
+.accordion-item {
+  background: #FFF7F1 !important;
+}
+
+.accordion-button:hover {
+  background: #FFEBDC !important;
+  border-left: 4px solid #FF6361;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../icons/right-arrow-after.svg) !important;
+  transform: rotate(270deg) !important;
+}
+
+.accordion-button::after {
+  background-image: url(../icons/right-arrow.svg) !important;
+}
+
+.accordion-item {
+  border: 3px solid white !important;
+}
+
+.titulo-acordeao {
+  font-weight: 600;
+}
+
+.titulo-conteudo-cordeao {
+  color: #FF6361;
+}
+
+.imagens-acordeao {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.fundo-gradiente {
+  background: linear-gradient(360deg, #FF9D57 14.62%, #FF6361 100%);
+}
+
+/* Baixar Guia */
+
+.baixar-guia {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #2E30AB;
+  padding: 2rem;
+}
+
+.btn-baixar-guia {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #FF725E;
+  padding: .5rem 1rem;
+  font-weight: 600;
+}
+
+.baixar-guia>p {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+  .baixar-guia p {
+    font-size: 1.5rem;
+  }
+  .navbar-brand {
+    width: 160px;
+  }
+}
+
+/* Card conheça as máquinas*/
+
+.card-conheca-as-maquinas {
+  background: #FFF7F1;
+  padding: 1rem;
+}
+
+.tag-laranja {
+  bottom: 50px;
+  display: inline-block;
+  background: #FF6460;
+  border-radius: 5px;
+  padding: .6rem;
+  color: white;
+}
+
+/*container antes do footer*/
+
+.container-check {
+  background: #FFF7F1;
+  padding: 2rem;
+}
+
+/*Footer*/
+
+footer {
+  background: #FF6361;
+  padding: 1rem 0;
+}
+
+
+/*Ajustes Mobile Header*/
+
+@media screen and (max-width: 800px) {
+  .navbar-brand {
+   width: 160px;
+ }
+}
