@@ -52,11 +52,12 @@ p {
     text-align: center;
   }
 
-  .baixar-guia p {
-    font-size: 1.5rem;
-  }
 }
 
+.overflow  {
+  overflow-y:hidden;
+  
+}
 
 /*Botões*/
 
@@ -115,7 +116,7 @@ select:focus,
 }
 
 .accordion-item {
-  border: 3px solid white !important;
+  border: 1px solid #FFEBDC !important;
 }
 
 .titulo-acordeao {
@@ -127,9 +128,10 @@ select:focus,
 }
 
 .imagens-acordeao {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+ 
 }
 
 .fundo-gradiente {
